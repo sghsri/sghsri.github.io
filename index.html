@@ -11,27 +11,38 @@
     crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+
+  <meta property="og:title" content="Sriram Hariharan's Site">
+  <meta property="og:url" content="sghsri.github.io">
+  <meta property="og:description" content="The Personal Website and Portfolio of Sriram Hariharan">
+  <meta property="og:image" content="img/technologist.png">
+
+  <link rel="shortcut icon" href="img/technologist.png">
 
 </head>
 
 <body>
-  <div id="emaildiv" style="display: none;">email</div>
   <section class="hero is-primary">
-    <div class="hero-body">
+    <div class="hero-body" style="margin-bottom: -25px;">
       <div class="columns">
         <div class="column is-12">
           <div class="container content">
-            <h1 class="title is-1">Hi! I'm Sriram Hariharan! 👋</h1>
-            <h3 class="subtitle">
-              Computer Science @
-              <span class="hook-em">UT Austin</span> 🤘
+            <h1 class="title is-1" id="greetings">Hi! I'm Sriram Hariharan!👋</h1>
+            <h3 class="subtitle"> Student, Developer, Hacker
             </h3>
-            <a href="https://resume.creddle.io/resume/83ob6uu5is1" class="button is-primary is-medium is-rounded resume">
+            <a href="https://resume.creddle.io/resume/83ob6uu5is1" class="button is-primary is-medium is-rounded head-button">
               <i class="fa fa-file">
                 <br>
               </i>Resume
             </a>
-            <a class="button is-primary is-medium is-rounded resume" id="email">
+            <a href="https://github.com/sghsri" class="button is-primary is-medium is-rounded head-button">
+              <i class="fab fa-github">
+                <br>
+              </i>Github
+            </a>
+            <a class="button is-primary is-medium is-rounded head-button" id="email">
               <i class="fa fa-envelope">
                 <br>
               </i>Contact
@@ -41,51 +52,102 @@
       </div>
     </div>
   </section>
+
   <section class="section">
     <div class="container">
       <div class="columns">
         <div class="column is-11">
-          <div class="content is-medium">
-            <h3 class="title is-3">My Projects ¯\_(ツ)_/¯</h3>
+          <div class="content is-large">
+            <h3 class="title is-3">About Me</h3>
             <div class="box">
-              <h4 class="title is-3">Generic Project Here</h4>
-              <article class="message is-primary">
-
-                <div class="message-body">
-                  Insert soem dumb project here lmao
-                </div>
-              </article>
+              <p class="is-size-5">I'll be a
+                <span style='font-weight: bold'>sophomore</span> this year at the
+                <span class='hook-em'>University of Texas at Austin 🤘 </span> studying
+                <span style='font-weight: bold'>Computer Science</span>. I love to tinker around, but I'm especially interested in mobile development and
+                machine-learning. I also can talk for hours about obscure history, and am right now either coding something
+                or binge-watching a TV show.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script>
-    $("#email").on({
-      mouseenter: function () {
-        $(this).html(
-          '<i class="fa fa-envelope" style="padding-right:5px;" ><br></i> sghsri@gmail.com (click to copy)'
-        );
-      },
-      mouseleave: function () {
-        $(this).html('<i class="fa fa-envelope" style="padding-right:5px;"><br></i> Contact');
-      },
-      click: function () {
-        copyToClipboard();
-        $(this).html('<i class="fa fa-envelope" style="padding-right:5px;"><br></i> sghsri@gmail.com (copied!)');
-      }
-    });
+  <section class="section" style="margin-top: -50px">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="is-medium menu">
+            <p class="menu-label skill">
+              Languages/Technologies
+            </p>
+            <ul class="menu-list">
+              <li>
+                <span class="tag is-rounded is-medium skills">Java</span>
+                <span style="font-size: small">(Experienced)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">Android</span>
+                <span style="font-size: small">(Experienced)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">Javascript, HTML, CSS</span>
+                <span style="font-size: small">(Familiar)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">Python</span>
+                <span style="font-size: small">(Exposure)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">C#</span>
+                <span style="font-size: small">(Exposure)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">R</span>
+                <span style="font-size: small">(Exposure)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">SQL</span>
+                <span style="font-size: small">(Exposure)</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">Heroku</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">Postman</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">praw</span>
+              </li>
+              <li>
+                <span class="tag is-rounded is-medium skills">git</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column is-8">
+          <div class="content is-medium">
+            <h3 class="title is-3">My Projects</h3>
+            <div class="box">
+              <h4 class="title is-4">UT Registration Plus</h4>
+              <img src='https://lh3.googleusercontent.com/k_aAutiaOshBRWWFBk-RMrdUlz0ZvauCuh63CpcNywv32r51pr-9YONIofF-FbKl1Rwm4ONV=w640-h400-e365'></img>
+            </div>
 
-    function copyToClipboard() {
-      let input = document.createElement("input");
-      document.body.appendChild(input);
-      input.setAttribute('value', "sghsri@gmail.com");
-      input.select();
-      document.execCommand("copy");
-      document.body.removeChild(input);
-    };
-  </script>
+            <div class="box">
+              <h4 class="title is-4">Generic Project Here</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Copyright © Sriram Hariharan 2016
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
