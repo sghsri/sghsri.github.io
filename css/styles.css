@@ -1,0 +1,24 @@
+.hero.is-primary {
+    background-color: #00bcd4;
+}
+
+.subtitle {
+    padding-top: 15px;
+}
+
+.resume {
+    margin: 5px 10px -20px 5px;
+}
+
+.button.is-primary {
+    background-color: #0097a7;
+}
+
+.hook-em {
+    color: #cc5500;
+}
+
+.fa.fa {
+    margin-top: 5px;
+    margin-right: 5px;
+}

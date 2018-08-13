@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sriram Hariharan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="emaildiv" style="display: none;">email</div>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-12">
+          <div class="container content">
+            <h1 class="title is-1">Hi! I'm Sriram Hariharan! 👋</h1>
+            <h3 class="subtitle">
+              Computer Science @
+              <span class="hook-em">UT Austin</span> 🤘
+            </h3>
+            <a href="https://resume.creddle.io/resume/83ob6uu5is1" class="button is-primary is-medium is-rounded resume">
+              <i class="fa fa-file">
+                <br>
+              </i>Resume
+            </a>
+            <a class="button is-primary is-medium is-rounded resume" id="email">
+              <i class="fa fa-envelope">
+                <br>
+              </i>Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-11">
+          <div class="content is-medium">
+            <h3 class="title is-3">My Projects ¯\_(ツ)_/¯</h3>
+            <div class="box">
+              <h4 class="title is-3">Generic Project Here</h4>
+              <article class="message is-primary">
+
+                <div class="message-body">
+                  Insert soem dumb project here lmao
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $("#email").on({
+      mouseenter: function () {
+        $(this).html(
+          '<i class="fa fa-envelope" style="padding-right:5px;" ><br></i> sghsri@gmail.com (click to copy)'
+        );
+      },
+      mouseleave: function () {
+        $(this).html('<i class="fa fa-envelope" style="padding-right:5px;"><br></i> Contact');
+      },
+      click: function () {
+        copyToClipboard();
+        $(this).html('<i class="fa fa-envelope" style="padding-right:5px;"><br></i> sghsri@gmail.com (copied!)');
+      }
+    });
+
+    function copyToClipboard() {
+      let input = document.createElement("input");
+      document.body.appendChild(input);
+      input.setAttribute('value', "sghsri@gmail.com");
+      input.select();
+      document.execCommand("copy");
+      document.body.removeChild(input);
+    };
+  </script>
+</body>
+
+</html>
