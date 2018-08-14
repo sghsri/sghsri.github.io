@@ -21,6 +21,7 @@ $(function () {
     }
 
     function copyToClipboard() {
+        //make a dummy input with email as value, then select it and copy the value from it
         let input = document.createElement("input");
         document.body.appendChild(input);
         input.setAttribute('value', "sghsri@gmail.com");
