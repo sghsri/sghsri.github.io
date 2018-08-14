@@ -2,7 +2,7 @@ $(function () {
     $("#email").on({
         mouseenter: function () {
             $(this).html(
-                '<i class="fa fa-envelope" style="padding-right:5px;" ><br></i> sghsri@gmail.com (click to copy)'
+                'sghsri@gmail.com (click to copy)'
             );
         },
         mouseleave: function () {
@@ -11,7 +11,7 @@ $(function () {
         click: function () {
             copyToClipboard();
             $(this).html(
-                '<i class="fa fa-envelope" style="padding-right:5px;"><br></i> sghsri@gmail.com (copied!)');
+                'sghsri@gmail.com (copied!)');
         }
     });
 

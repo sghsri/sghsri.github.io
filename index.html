@@ -13,7 +13,6 @@
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 
-
   <meta property="og:title" content="Sriram Hariharan's Site">
   <meta property="og:url" content="sghsri.github.io">
   <meta property="og:description" content="The Personal Website and Portfolio of Sriram Hariharan">
@@ -24,8 +23,8 @@
 </head>
 
 <body>
-  <section class="hero is-primary">
-    <div class="hero-body" style="margin-bottom: -25px;">
+  <section class="hero is-primary is-small">
+    <div class="hero-body">
       <div class="columns">
         <div class="column is-12">
           <div class="container content">
@@ -33,7 +32,7 @@
             <h3 class="subtitle"> Student, Developer, Hacker
             </h3>
             <div class='buttons'>
-              <a href="https://resume.creddle.io/resume/83ob6uu5is1" class="button is-primary is-medium is-rounded head-button">
+              <a href="https://resume.creddle.io/resume/83ob6uu5is1" class="button is-primary is-medium is-rounded head-button" style='margin-left:0px;'>
                 <i class="fa fa-file">
                   <br>
                 </i>Resume
@@ -44,7 +43,7 @@
                 </i>Github
               </a>
               <a class="button is-primary is-medium is-rounded head-button" id="email">
-                <i class="fa fa-envelope">
+                <i class="fa fa-envelope" id='emailicon'>
                   <br>
                 </i>Contact
               </a>
@@ -66,7 +65,7 @@
                 <span class='hook-em'>University of Texas at Austin 🤘 </span> studying
                 <span style='font-weight: bold'>Computer Science</span>. I love to tinker around, but I'm especially interested in mobile development and
                 machine-learning. I also can talk for hours about obscure history, and am right now either coding something
-                or binge-watching a TV show.
+                or binge-watching a TV show. I am currently seeking an internship for Summer 2019!
               </p>
             </div>
           </div>
@@ -74,13 +73,14 @@
       </div>
     </div>
   </section>
+
   <section class="section" style="margin-top: -50px">
     <div class="container">
       <div class="columns">
         <div class="column is-3">
           <aside class="is-medium menu">
-            <p class="menu-label skill">
-              Languages/Technologies
+            <p class="menu-label skill" style="padding-top:5px;">
+              Skills/Technologies
             </p>
             <ul class="menu-list">
               <li>
@@ -122,11 +122,20 @@
                 <span class="tag is-rounded is-medium skills">Postman</span>
               </li>
               <li>
-                <span class="tag is-rounded is-medium skills">praw</span>
-              </li>
-              <li>
                 <span class="tag is-rounded is-medium skills">git</span>
               </li>
+            </ul>
+            <p class="menu-label" style="margin-top: 45px; margin-bottom: 5px;">
+              Relevant Coursework
+            </p>
+            <ul class="tags" style="margin-bottom: 15px;">
+
+              <span class="tag is-rounded is-medium courses">Data Structures</span>
+              <span class="tag is-rounded is-medium courses">Matrices</span>
+              <span class="tag is-rounded is-medium courses">Discrete Mathematics</span>
+              <span class="tag is-rounded is-medium courses">Ethics of CS</span>
+              <span class="tag is-rounded is-medium courses">Comp Org. & Architecture</span>
+
             </ul>
           </aside>
         </div>
@@ -143,12 +152,7 @@
                   </header>
                   <div class="card-content">
                     <div class="content">
-                      <div class='columns' style="margin-bottom: 2px;">
-                        <div class='column '>
-
-                          <img src='https://lh3.googleusercontent.com/k_aAutiaOshBRWWFBk-RMrdUlz0ZvauCuh63CpcNywv32r51pr-9YONIofF-FbKl1Rwm4ONV=w640-h400-e365'></img>
-                        </div>
-                      </div>
+                      <img src='https://lh3.googleusercontent.com/k_aAutiaOshBRWWFBk-RMrdUlz0ZvauCuh63CpcNywv32r51pr-9YONIofF-FbKl1Rwm4ONV=w640-h400-e365'></img>
                       A Chrome Extension that tries to streamline most of the steps and headaches of registering for classes at UT Austin.
                     </div>
                   </div>
@@ -158,6 +162,11 @@
                       <i class="fab fa-chrome footer-icon">
                         <br>
                       </i> Try It</a>
+                    <a href="http://dailytexanonline.com/2018/08/07/student-creates-chrome-extension-to-make-registration-easier" class="card-footer-item">
+                      <i class="far fa-newspaper  footer-icon">
+                        <br>
+                      </i> Article
+                    </a>
                     <a href="https://github.com/sghsri/UT-Registration-Plus" class="card-footer-item">
                       <i class="fab fa-github  footer-icon">
                         <br>
@@ -165,29 +174,21 @@
                     </a>
                   </footer>
                 </div>
-
-
               </div>
               <div class="column is-flex">
                 <div class="card">
                   <header class="card-header">
                     <p style='padding:15px;margin-bottom: 2px;' class="title is-size-4">
                       Six-Twelve-Six
+                      <span class="award">HackRice 2017 Patient Engagement Award</span>
                     </p>
                   </header>
                   <div class="card-content">
                     <div class="content">
-                      <div class='columns' style="margin-bottom: 2px;">
-                        <div class='column '>
-                          <figure class='is-128x128'>
-                            <img src='https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/539/061/datas/gallery.jpg'></img>
-                          </figure>
-                        </div>
-                      </div>
-                      An Android app that allows diabetic patients to view blood sugar trends, a predicted A1C value, and extensive catalog of
-                      food with carb values.
+                      <img src='img/six-twelve-six.png'></img>
+                      An Android app that allows diabetic patients to view their blood sugar trends, predicted A1C values, and the carb values
+                      in different foods.
                       <br>
-
                     </div>
                   </div>
                   <footer class="card-footer">
@@ -204,16 +205,95 @@
                 </div>
               </div>
             </div>
+            <div class="columns">
+              <div class="column is-flex">
+                <div class="card">
+                  <header class="card-header">
+                    <p style='padding:15px;margin-bottom: 2px;' class="title is-size-4">
+                      Polytic
+                      <span class="award">Houston Hackathon 2018 Winner</span>
+                    </p>
+                  </header>
+                  <div class=" card-content ">
+                    <div class="content ">
+                      <img src='img/polytic.png'></img>
+                      An Android app designed to aggregate political information and present it to users in an aesthetically pleasing and simplified
+                      way.
+                      <br>
+                    </div>
+                  </div>
+                  <footer class="card-footer ">
+                    <a href="https://devpost.com/software/polytic" class="card-footer-item ">
+                      <i class="fas fa-star footer-icon ">
+                        <br>
+                      </i>Devpost</a>
+                    <a href="https://github.com/sghsri/Polytic" class="card-footer-item ">
+                      <i class="fab fa-github footer-icon ">
+                        <br>
+                      </i> Code
+                    </a>
+                  </footer>
+                </div>
+              </div>
+              <div class="column is-flex ">
+                <div class="card ">
+                  <header class="card-header ">
+                    <p style='padding:15px;margin-bottom: 2px;' class="title is-size-4 ">
+                      SafeHou
+                    </p>
+                  </header>
+                  <div class="card-content ">
+                    <div class="content ">
+                      <img src='img/safeHou.png'></img>
+                      SafeHOU is a mobile app that uses machine learning and public crime data to predict crime at different times and locations
+                      in Houston.
+                      <br>
+                    </div>
+                  </div>
+                  <footer class="card-footer ">
+                    <a href="https://devpost.com/software/safehou" class="card-footer-item ">
+                      <i class="fas fa-star footer-icon ">
+                        <br>
+                      </i>Devpost</a>
+                    <a href="https://github.com/sghsri/safeHOU" class="card-footer-item ">
+                      <i class="fab fa-github footer-icon ">
+                        <br>
+                      </i> Code
+                    </a>
+                  </footer>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>Copyright © Sriram Hariharan 2016
-      </p>
 
+  <footer class="footer">
+    <div class="content has-text-centered ">
+      <p>
+        <a href="https://www.linkedin.com/in/sriram-hariharan-720481121/" class="button is-rounded is-medium social-footer">
+          <i class="fab fa-linkedin-in">
+          </i>
+        </a>
+        <a href="https://www.facebook.com/sriram.hariharan.9?" class="button is-rounded is-medium social-footer">
+          <i class="fab fa-facebook-f">
+          </i>
+        </a>
+        <a href="https://www.instagram.com/thesriramhariharan/" class="button is-rounded is-medium social-footer">
+          <i class="fab fa-instagram">
+          </i>
+        </a>
+        <a href="https://twitter.com/sghsri1" class="button is-rounded is-medium social-footer">
+          <i class="fab fa-twitter">
+          </i>
+        </a>
+        <br>
+        <br> Made with
+        <a href='https://bulma.io/' style="font-weight: bold">Bulma</a>
+        <br> Copyright © Sriram Hariharan 2018
+      </p>
     </div>
   </footer>
 </body>
