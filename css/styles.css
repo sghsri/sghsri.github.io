@@ -93,3 +93,7 @@ body {
 a {
     color: inherit;
 }
+
+.experience-img-container {
+    float: right;
+}
