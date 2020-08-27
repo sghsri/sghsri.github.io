@@ -17,6 +17,13 @@ body {
     transition: 0.3s;
 }
 
+@media screen and (max-width: 650px) {
+    .head-button {
+        margin: 0 5px 0 5p  x;
+        font-size: medium !important;
+    }
+}
+
 .button.is-primary {
     background-color: #512DA8;
 }
@@ -59,11 +66,11 @@ body {
     margin: 10px 10px 10px 5px;
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     #email {
         display: none;
     }
-}
+} */
 
 .card, .box {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.2);
