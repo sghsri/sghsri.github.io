@@ -4,7 +4,7 @@ body {
 
 .hero.is-primary {
     padding: 5px;
-    background-color: #673AB7;
+    background-color: #673ab7;
 }
 
 .subtitle {
@@ -25,11 +25,12 @@ body {
         margin-bottom: 5px;
         font-size: medium !important;
     }
-    .buttons {}
+    .buttons {
+    }
 }
 
 .button.is-primary {
-    background-color: #512DA8;
+    background-color: #512da8;
 }
 
 .hook-em {
@@ -57,8 +58,9 @@ body {
     font-size: medium;
 }
 
-.card-footer-item:hover, .footer-icon:hover {
-    color: #512DA8;
+.card-footer-item:hover,
+.footer-icon:hover {
+    color: #512da8;
 }
 
 .skills {
@@ -76,14 +78,16 @@ body {
     }
 } */
 
-.card, .box {
+.card,
+.box {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     transition: 0.3s;
 }
 
-.card:hover, .box:hover {
+.card:hover,
+.box:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
